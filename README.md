@@ -1,2 +1,2 @@
 # Portfolio
-You can find my portolio at _______ :)
+You can find my portfolio at _______ :)

@@ -9,11 +9,21 @@ body {
 	color: #444;
 }
 
+p {
+	font-size: 20px;
+}
+
+hr {
+	border-top: 1.5px solid #ccc;
+	margin: 30px;
+}
+
 .header {
 	height: 100vh;
 }
 
 .navbar {
+	position: fixed;
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -58,4 +68,42 @@ body {
 }
 .header-text {
 	font-size: 20px;
+}
+
+.socials ul {
+	display: flex;
+	padding: 0px;
+	list-style: none;
+	margin-top: 7px;
+}
+
+.socials a {
+	padding: 15px;
+}
+
+ion-icon {
+	color: black;
+	font-size: 40px;
+}
+
+#dota {
+	padding-top: 1.5px;
+	height: 35px;
+}
+
+.about-content {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	margin-left: 80px;
+	margin-right: 80px;
+}
+
+.resume-container {
+	display: none;
+}
+
+.hidden {
+	display: none;
 }

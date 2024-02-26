@@ -1,5 +1,6 @@
 'use strict';
 
+//Could use e.target and event delegation for performance
 const navigationSmoothScroll = function () {
 	document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 		anchor.addEventListener('click', function (e) {
@@ -7,8 +8,6 @@ const navigationSmoothScroll = function () {
 
 			const targetId = this.getAttribute('href').substring(1);
 			const targetElement = document.getElementById(targetId);
-			console.log(targetId);
-			console.log(targetElement);
 
 			if (targetElement) {
 				//Finding the distance to account for the fixed navigation bar

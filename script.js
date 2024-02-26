@@ -7,9 +7,19 @@ const navigationSmoothScroll = function () {
 
 			const targetId = this.getAttribute('href').substring(1);
 			const targetElement = document.getElementById(targetId);
+			console.log(targetId);
+			console.log(targetElement);
 
 			if (targetElement) {
-				targetElement.scrollIntoView({ behavior: 'smooth' });
+				//Finding the distance to account for the fixed navigation bar
+				const navbarHeight =
+					document.querySelector('.navbar').offsetHeight;
+				const targetOffset = targetElement.offsetTop - navbarHeight;
+
+				window.scrollTo({
+					top: targetOffset,
+					behavior: 'smooth',
+				});
 			}
 		});
 	});

@@ -118,7 +118,7 @@ ion-icon {
 }
 
 .card img {
-	width: 300px;
+	width: 400px;
 	height: auto;
 }
 
@@ -152,4 +152,113 @@ ion-icon {
 .card-text a:hover {
 	color: #5f845c;
 	text-decoration: underline;
+}
+
+.hobbies-content {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	margin-left: 80px;
+	margin-right: 80px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+	display: none;
+}
+
+.mySlides img {
+	width: 100%; /* Adjust the width as needed */
+	height: 400px; /* Set a fixed height */
+	object-fit: cover; /* Maintain aspect ratio */
+}
+
+/* Navigation buttons */
+.next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	right: 0px;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+.prev {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	left: 0px;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+/* Caption text */
+.text {
+	color: #f2f2f2;
+	font-size: 15px;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+}
+
+.numbertext {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+}
+
+.fade {
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@keyframes fade {
+	from {
+		opacity: 0.4;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #8c8c8c;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+	background-color: #434343;
 }
